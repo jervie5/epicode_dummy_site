@@ -1,0 +1,137 @@
+.container-fluid
+    {justify-content: space-around !important;}
+
+
+.navbar-collapse
+    {
+        flex-grow: 0;
+    }
+
+#image
+    {
+    display: flex;
+    padding: 10rem;
+    background-image:  url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.testo1
+        {color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: left;}
+
+.btn
+        {
+            background-color: rgb(152, 224, 252) ;
+            color: white;
+            border: transparent;
+            width: 8rem;
+            height: 2rem;
+            margin-top: 1rem;
+            
+        }
+
+#title1
+        {
+            text-align: center;
+            margin-top: 4rem;
+            ;
+        }
+#phrase
+        {
+            line-height: 10px;
+            margin-top: 2rem;
+        }
+
+
+#columns
+        {display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        
+    }
+#columns p
+    {
+        padding: 0 3rem;
+    }
+
+#secondSection
+    {
+        display:flex;
+        flex-direction: column;
+        background-color:  teal;
+        height: 15rem;
+        align-items: center;
+        padding: 3rem ;
+    }
+
+#third
+    {   
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 3rem
+    }
+
+
+.check
+    {
+        width: 3rem;
+    }
+
+span
+    {
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+footer
+    {display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    
+}
+
+footer div
+    {margin-bottom: 3rem;}
+
+input
+    {
+        border:darkgray solid 1px;
+        border-radius: 5px 0 0 5px;
+    }
+#vb
+    {
+        background-color: rgb(152, 224, 252);
+        padding: 2px;
+        height: 30px;
+        width: 90px;
+        border:none;
+    }
+
+
+        /* desktop */
+@media screen and (max-width: 600px)
+{
+    #img
+    {padding: 2rem}
+
+    #columns
+    {
+        flex-direction: column;
+    }
+    #third
+        {
+            flex-direction: column;
+        }
+    footer
+        {
+            flex-direction: column;
+           
+        }
+}

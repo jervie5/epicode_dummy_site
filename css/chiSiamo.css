@@ -1,169 +1,153 @@
-.container-fluid
-    {justify-content: space-around !important;}
+.container-fluid {
+  justify-content: space-around !important;
+}
 
+.navbar-collapse {
+  flex-grow: 0;
+}
 
-.navbar-collapse
-    {
-        flex-grow: 0;
-    }
+#image {
+  display: flex;
+  padding: 10rem;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-#image
-    {
-    display: flex;
-    padding: 10rem;
-    background-image:  url(../progettoS2/images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+.testo1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 
-.testo1
-        {color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: left;}
+.btn {
+  background-color: rgb(152, 224, 252);
+  color: white;
+  border: transparent;
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
 
-.btn
-        {
-            background-color: rgb(152, 224, 252) ;
-            color: white;
-            border: transparent;
-            width: 8rem;
-            height: 2rem;
-            margin-top: 1rem;
-            
-        }
+main {
+  padding: 5rem 10rem;
+}
 
+.part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-main
-        {padding: 5rem 10rem;}
+.part2 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+}
 
-.part1
-        {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-        }
-
-.part2
-    {
-        display: flex;
-        flex-direction: row;
-        /* justify-content: space-between; */
-        align-items: center;
-    }
-
-
-.comp, .compClose
-    {
-        padding: 1rem;
-        margin: 0;
-    }
-
+.comp,
+.compClose {
+  padding: 1rem;
+  margin: 0;
+}
 
 /* columns corso */
 
-#columns
-    {display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    }
-
-.check
-    {
-        width: 2rem;
-    }
-
-
-#base, #intermedio, #full
-    {   
-        width: 20rem;
-        transform: skew(-15deg);
-        text-align: center;
-        height: 20rem;
-        padding: 5rem 0;
-        margin: 0;
-    }
-
-#base
-    {background-color: darkturquoise;}
-#intermedio
-    {background-color: rgb(209, 94, 0);}
-
-#full
-    {background-color: rgb(253, 255, 122);}
-
-
-.grayColumn
-    {   display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: lightgray;
-        text-align: left;
-        height: 25rem;
-        padding: 3rem 1rem;
-
-        
-    }
-
-footer
-    {display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 3rem;
+#columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-footer div
-    {margin-bottom: 3rem;}
+.check {
+  width: 2rem;
+}
 
-#vb
-    {
-        background-color: rgb(152, 224, 252);
-        padding: 2px;
-        height: 30px;
-        width: 90px;
-        border:none;
-    }
+#base,
+#intermedio,
+#full {
+  width: 20rem;
+  transform: skew(-15deg);
+  text-align: center;
+  height: 20rem;
+  padding: 5rem 0;
+  margin: 0;
+}
+
+#base {
+  background-color: darkturquoise;
+}
+#intermedio {
+  background-color: rgb(209, 94, 0);
+}
+
+#full {
+  background-color: rgb(253, 255, 122);
+}
+
+.grayColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: lightgray;
+  text-align: left;
+  height: 25rem;
+  padding: 3rem 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+footer div {
+  margin-bottom: 3rem;
+}
+
+#vb {
+  background-color: rgb(152, 224, 252);
+  padding: 2px;
+  height: 30px;
+  width: 90px;
+  border: none;
+}
 
 /* desktop */
 
-@media screen and (max-width: 600px)
-{
+@media screen and (max-width: 600px) {
+  main {
+    padding: 2rem 2rem;
+  }
+  .part2 {
+    flex-direction: column;
+  }
+  #columns {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    main
-        {
-            padding: 2rem 2rem;
-        }
-    .part2
-        {
-            flex-direction: column;
-        }
-    #columns  
-        {flex-direction: column;
-           align-items: center;
-        }
-    
-    #base, #intermedio, #full
-        {
-            height: 15rem;
-            
-        }
-    
-    footer
-        {
-            flex-direction: column;
-           
-        }
-    
-    .grayColumn
-            {
-                width: 30rem;
-            }
-        
-        #base, #intermedio, #full
-            {
-                width: 30rem;
-            }
-    
+  #base,
+  #intermedio,
+  #full {
+    height: 15rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .grayColumn {
+    width: 30rem;
+  }
+
+  #base,
+  #intermedio,
+  #full {
+    width: 30rem;
+  }
 }

@@ -140,8 +140,4 @@ footer div {
   footer {
     flex-direction: column;
   }
-
-  .grayColumn {
-    width: 30rem;
-  }
 }

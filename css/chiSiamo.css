@@ -1,3 +1,8 @@
+body {
+  width: 100%;
+  margin: 2px;
+}
+
 .container-fluid {
   justify-content: space-around !important;
 }
@@ -44,14 +49,8 @@ main {
 .part2 {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
-}
-
-.comp,
-.compClose {
-  padding: 1rem;
-  margin: 0;
 }
 
 /* columns corso */
@@ -60,6 +59,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
 }
 
 .check {
@@ -119,22 +119,22 @@ footer div {
 
 /* desktop */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 844px) {
   main {
-    padding: 2rem 2rem;
+    margin: 1px;
+    padding: 1rem;
   }
   .part2 {
     flex-direction: column;
   }
   #columns {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  #base,
-  #intermedio,
-  #full {
-    height: 15rem;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-right: 50vw;
   }
 
   footer {
@@ -142,12 +142,6 @@ footer div {
   }
 
   .grayColumn {
-    width: 30rem;
-  }
-
-  #base,
-  #intermedio,
-  #full {
     width: 30rem;
   }
 }

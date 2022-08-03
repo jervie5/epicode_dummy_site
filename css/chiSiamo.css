@@ -7,8 +7,13 @@ body {
   justify-content: space-around !important;
 }
 
-.navbar-collapse {
-  flex-grow: 0;
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+div a {
+  margin: 3px;
 }
 
 #image {

@@ -2,8 +2,13 @@
   justify-content: space-around !important;
 }
 
-.navbar-collapse {
-  flex-grow: 0;
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+div a {
+  margin: 3px;
 }
 
 #title {
@@ -22,7 +27,6 @@ section {
 #info {
   display: flex;
   flex-direction: column;
-  width: 30rem;
   padding: 0 0.5rem;
 }
 #sede {
@@ -66,9 +70,6 @@ input {
     flex-direction: column;
 
     align-self: center;
-  }
-  #info {
-    padding: 0;
   }
 
   footer {

@@ -24,7 +24,7 @@ div a {
   color: white;
   flex-direction: column;
   text-align: center;
-  align-items: left;
+  margin: auto;
 }
 
 .btn {
